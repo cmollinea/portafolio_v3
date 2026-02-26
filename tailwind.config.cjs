@@ -13,7 +13,8 @@ module.exports = {
         muted: 'var(--muted)'
       },
       fontFamily: {
-        mono: ['"JetBrains Mono"', '"Fira Code"', 'Menlo', 'monospace']
+        sans: ['"Space Mono"', 'monospace'],
+        mono: ['"Space Mono"', '"JetBrains Mono"', 'monospace']
       }
     }
   },
