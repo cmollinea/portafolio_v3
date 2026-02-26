@@ -1,33 +1,45 @@
-import { stack } from '../../constants';
 import { AnimatedContainer } from './AnimatedContainer';
 import { BentoContainer } from './BentoContainer';
+import Astro from '../icons/Astro';
+import Css from '../icons/CSS';
+import Git from '../icons/Git';
+import HTML from '../icons/HTML';
+import JavaScript from '../icons/JavaScript';
+import Next from '../icons/Next';
+import React from '../icons/React';
+import TailwndCss from '../icons/TailwndCss';
+import TypeScript from '../icons/TypeScript';
+
+const techStack = [
+  { component: HTML, label: 'HTML' },
+  { component: Css, label: 'CSS' },
+  { component: JavaScript, label: 'JavaScript' },
+  { component: TypeScript, label: 'TypeScript' },
+  { component: React, label: 'React' },
+  { component: TailwndCss, label: 'Tailwind' },
+  { component: Next, label: 'Next.js' },
+  { component: Astro, label: 'Astro' },
+  { component: Git, label: 'Git' }
+];
 
 function MotionStack() {
   return (
-    <AnimatedContainer
-      key={'Skills Container'}
-      className='grid h-full bg-card border-border grid-cols-2 sm:grid-cols-5 lg:grid-cols-6 p-4 gap-1 bento-container col-span-6 pt-10'
-    >
-      <h1 className='font-black col-span-2 sm:col-span-5 lg:col-span-6 text-2xl w-full md:text-3xl 2xl:text-4xl bg-gradient-to-tr from-foreground to-neutral-600 bg-clip-text text-transparent '>
-        Skills
-      </h1>
-      {stack.map((tech, index) => (
-        <AnimatedContainer
-          key={index}
-          className={tech.className}
-          delay={index * 0.1}
-        >
-          <BentoContainer
-            key={index}
-            className='text-xs rounded-md md:text-xl  backdrop-blur-sm max-lg:p-2 h-full flex items-center place-content-center'
-          >
-            <tech.component
-              className={tech.className ? 'h-16' : 'h-10' + ' max-lg:h-8'}
-            />
-          </BentoContainer>
-        </AnimatedContainer>
-      ))}
+    <AnimatedContainer key='Skills Container' className='col-span-12 bento-container'>
+      <p className='section-label mb-6'>Tech Stack</p>
+      <div className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 gap-2'>
+        {techStack.map((tech, index) => (
+          <AnimatedContainer key={index} delay={index * 0.05}>
+            <BentoContainer className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl transition-all duration-150 group cursor-default hover:bg-primary/5'>
+              <tech.component className='h-7 group-hover:scale-110 transition-transform duration-150' />
+              <span className='text-[10px] font-mono text-muted group-hover:text-primary transition-colors duration-150 text-center leading-tight'>
+                {tech.label}
+              </span>
+            </BentoContainer>
+          </AnimatedContainer>
+        ))}
+      </div>
     </AnimatedContainer>
   );
 }
+
 export default MotionStack;

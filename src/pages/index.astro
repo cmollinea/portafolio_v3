@@ -1,25 +1,32 @@
 ---
-import type { GetStaticPaths } from 'astro';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import MyWork from '../components/MyWork.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Contact from '../components/Contact.astro';
 import NavBar from '../components/NavBar.astro';
-import Badge from '../components/Badge.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Info from '../components/Info.astro';
+import Experience from '../components/Experience.astro';
+import Stack from '../components/React/Stack';
 ---
 
-<Layout title='cympledev | Frontend Developer | Portfolio'>
-  <Badge />
-  <main class='container max-w-7xl mx-auto grid gap-2 grid-cols-12 p-4'>
-    <Info />
+<Layout title='cympledev | FullStack Developer | Portfolio'>
+  <main class='container max-w-5xl mx-auto grid gap-3 grid-cols-12 p-4 pt-3 pb-16'>
     <NavBar />
     <Hero />
+    <Experience />
+    <Stack client:load />
     <MyWork />
     <AboutMe />
     <Contact />
-    <Testimonials />
+
+    <!-- Footer -->
+    <footer class='col-span-12 pt-8 pb-2 flex items-center justify-between gap-4'>
+      <span class='text-[11px] font-mono text-muted'>
+        © {new Date().getFullYear()} Carlos Yoan · cympledev
+      </span>
+      <span class='text-[11px] font-mono text-muted'>
+        Built with Astro + React
+      </span>
+    </footer>
   </main>
 </Layout>

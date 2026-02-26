@@ -1,58 +1,41 @@
 ---
-import StyledSection from './StyledSection.astro';
-import SectionTitle from './SectionTitle.astro';
 import VisualStudioCode from './icons/VisualStudioCode';
 import Terminal from './icons/Terminal';
 import GoogleFont from './icons/GoogleFont';
 import OperaGX from './icons/OperaGX';
 import Theme from './icons/Theme';
-import content from '../constants/content.json';
 import { AnimatedContainer } from './React/AnimatedContainer';
 
 const tools = [
-  {
-    icon: VisualStudioCode,
-    label: 'VS Code',
-    link: 'https://code.visualstudio.com'
-  },
-  {
-    icon: Terminal,
-    label: 'ZSH',
-    link: 'https://ohmyposh.dev'
-  },
-  {
-    icon: OperaGX,
-    label: 'OperaGX',
-    link: 'https://fonts.google.com'
-  },
-  {
-    icon: GoogleFont,
-    label: 'Fira Code',
-    link: 'https://fonts.google.com'
-  },
-  {
-    icon: Theme,
-    label: 'Bearded',
-    link: 'https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme'
-  }
+  { icon: VisualStudioCode, label: 'VS Code',  link: 'https://code.visualstudio.com' },
+  { icon: Terminal,         label: 'ZSH',       link: 'https://ohmyposh.dev' },
+  { icon: OperaGX,          label: 'Opera GX',  link: 'https://www.opera.com/gx' },
+  { icon: GoogleFont,       label: 'Fira Code', link: 'https://fonts.google.com/specimen/Fira+Code' },
+  { icon: Theme,            label: 'Bearded',   link: 'https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme' }
 ];
 ---
 
-<div class='col-span-6 grid grid-cols-5 gap-2'>
-  {
-    tools.map((tool, index) => (
-      <a target='_blank' href={tool.link} class='group relative rounded-md'>
-        <AnimatedContainer delay={index * 0.1} client:load>
-          <div class='flex flex-col bento-container min-[1000px]:gap-4 place-content-center items-center z-30 relative'>
-            <tool.icon />
-            <p class='text-neutral-500 group-hover:text-primary transition-colors ease-in-out font-bold text-xs'>
-              <span class='max-[1000px]:sr-only'> {tool.label}</span>
-            </p>
-          </div>
-
-          <span class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]' />
-        </AnimatedContainer>
-      </a>
-    ))
-  }
+<div class='bento-container h-full flex flex-col gap-6'>
+  <p class='section-label'>Daily Tools</p>
+  <div class='grid grid-cols-5 gap-2 flex-1'>
+    {
+      tools.map((tool, index) => (
+        <a
+          href={tool.link}
+          target='_blank'
+          rel='noopener noreferrer'
+          class='group'
+        >
+          <AnimatedContainer delay={index * 0.1} client:load>
+            <div class='flex flex-col items-center gap-2 p-3 rounded-xl border border-border bg-card hover:border-primary/30 transition-all duration-150 h-full'>
+              <tool.icon />
+              <span class='text-[10px] font-mono text-muted group-hover:text-primary transition-colors duration-150 font-medium text-center leading-tight'>
+                {tool.label}
+              </span>
+            </div>
+          </AnimatedContainer>
+        </a>
+      ))
+    }
+  </div>
 </div>

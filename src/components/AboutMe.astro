@@ -1,22 +1,37 @@
 ---
-import SectionTitle from './SectionTitle.astro';
 import content from '../constants/content.json';
-import MyTools from './MyTools.astro';
-import { BentoContainer } from './React/BentoContainer';
 import { AnimatedContainer } from './React/AnimatedContainer';
 ---
 
-<div class='col-span-12 lg:col-span-7 flex flex-col gap-2 h-fit'>
-  <AnimatedContainer client:load>
-    <BentoContainer className='flex w-full flex-col p-4'>
-      <SectionTitle id='about_me'>
-        {content.en.aboutMe.heading}
-      </SectionTitle>
-      <article
-        class='grid'
-        set:html={content.en.aboutMe.description}
-      /></BentoContainer
-    >
-  </AnimatedContainer>
-  <MyTools />
-</div>
+<AnimatedContainer client:load className='col-span-12 lg:col-span-7'>
+  <div class='bento-container flex flex-col gap-6'>
+    <p class='section-label' id='about_me'>About Me</p>
+
+    <article
+      class='text-sm text-muted leading-relaxed [&_p]:mt-4 [&_p:first-child]:mt-0 [&_span.font-bold]:text-foreground [&_span.font-bold]:font-semibold'
+      set:html={content.en.aboutMe.description}
+    />
+
+    <!-- Stat chips -->
+    <div class='flex flex-wrap gap-2 pt-2'>
+      <span
+        class='inline-flex items-center gap-1.5 text-[11px] font-mono px-3 py-1.5 rounded-full bg-primary/8 border border-primary/15 text-primary font-medium'
+      >
+        <span class='h-1 w-1 rounded-full bg-primary'></span>
+        2+ yrs experience
+      </span>
+      <span
+        class='inline-flex items-center gap-1.5 text-[11px] font-mono px-3 py-1.5 rounded-full bg-neutral-500/8 border border-border text-muted font-medium'
+      >
+        <span class='h-1 w-1 rounded-full bg-muted'></span>
+        9+ projects shipped
+      </span>
+      <span
+        class='inline-flex items-center gap-1.5 text-[11px] font-mono px-3 py-1.5 rounded-full bg-neutral-500/8 border border-border text-muted font-medium'
+      >
+        <span class='h-1 w-1 rounded-full bg-muted'></span>
+        3 countries
+      </span>
+    </div>
+  </div>
+</AnimatedContainer>

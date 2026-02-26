@@ -3,31 +3,55 @@ import { AnimatedContainer } from './React/AnimatedContainer';
 import { ThemeButton } from './React/ThemeButton';
 ---
 
-<AnimatedContainer client:load className='col-span-12 w-full'>
+<AnimatedContainer client:load className='col-span-12 w-full sticky top-4 z-40'>
   <header
-    class='py-2 flex items-center z-50 border rounded-xl border-border bg-card px-6 justify-between mx-auto box-border mt-10'
+    class='flex items-center border rounded-xl border-border bg-card/85 backdrop-blur-md px-4 py-2.5 justify-between'
   >
-    <div class='flex items-center relative'>
-      <div class='ring-1 ring-neutral-50/20 rounded-full overflow-hidden'>
-        <img src='/og.png' class='h-12 w-12 object-cover' />
-      </div>
-
-      <div
-        class='flex flex-col px-2 text-indigo font-medium absolute top-0 left-6'
-      >
-        <div
-          class='flex items-center gap-0.5 bg-green-600/5 place-content-center rounded-xl ring-1 ring-inset ring-green-600/10 p-1'
-        >
-          <span
-            class='block h-3 w-3 rounded-full bg-green-600 after:block after:w-3 after:h-3 after:bg-green-600 after:animate-ping after:rounded-full'
-          ></span><span class='text-green-600 text-[0.7rem] sr-only'
-            >Available</span
-          >
+    <!-- Brand -->
+    <div class='flex items-center gap-2.5'>
+      <div class='relative shrink-0'>
+        <div class='ring-1 ring-border rounded-full overflow-hidden h-8 w-8'>
+          <img src='/avatar.jpg' class='h-full w-full object-cover' alt='cympledev' />
         </div>
+        <span
+          class='absolute -bottom-0.5 -right-0.5 block h-2.5 w-2.5 rounded-full bg-green-500 ring-2 ring-card'
+        ></span>
+      </div>
+      <div class='flex flex-col leading-none'>
+        <span class='font-mono text-sm font-semibold tracking-tight'>cympledev</span>
+        <span class='text-[10px] font-mono text-muted'>available</span>
       </div>
     </div>
-    <div>
-      <ThemeButton client:load />
-    </div>
+
+    <!-- Nav links -->
+    <nav class='hidden md:flex items-center gap-0.5'>
+      <a
+        href='#about_me'
+        class='text-[13px] text-muted hover:text-foreground px-3 py-1.5 rounded-lg hover:bg-neutral-500/5 transition-colors font-medium'
+      >
+        About
+      </a>
+      <a
+        href='#experience'
+        class='text-[13px] text-muted hover:text-foreground px-3 py-1.5 rounded-lg hover:bg-neutral-500/5 transition-colors font-medium'
+      >
+        Experience
+      </a>
+      <a
+        href='#work'
+        class='text-[13px] text-muted hover:text-foreground px-3 py-1.5 rounded-lg hover:bg-neutral-500/5 transition-colors font-medium'
+      >
+        Projects
+      </a>
+      <a
+        href='#social'
+        class='text-[13px] text-muted hover:text-foreground px-3 py-1.5 rounded-lg hover:bg-neutral-500/5 transition-colors font-medium'
+      >
+        Contact
+      </a>
+    </nav>
+
+    <!-- Theme toggle -->
+    <ThemeButton client:load />
   </header>
 </AnimatedContainer>

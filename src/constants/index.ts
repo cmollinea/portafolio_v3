@@ -99,6 +99,12 @@ const shared = [
     github: 'https://github.com/cmollinea/cuban-electric-bill',
     image: bill,
     stackIndex: [4, 5, 2]
+  },
+  {
+    live: 'https://www.euforiahabana.com/',
+    github: 'https://github.com/cmollinea',
+    image: mixologa,
+    stackIndex: [7, 5]
   }
 ];
 

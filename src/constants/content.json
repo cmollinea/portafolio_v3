@@ -1,64 +1,68 @@
 {
   "en": {
     "hero": {
-      "heading": "Front-End Developer",
-      "small": "& Electrical Engineer ⚡",
-      "shortDescription": "Through dedication, perseverance, and a <b class='text-primary'>thirst for knowledge</b>, I am on a journey of <b class='text-primary'>continuous improvement</b>, eager to make a <b class='text-primary'>meaningful impact</b> in the ever-evolving world of web development. 🚀💻",
-      "ctaButtonLabel": "Get in touch"
+      "heading": "FullStack Developer",
+      "small": "React · Next.js · TypeScript",
+      "shortDescription": "Building fast, modern web experiences with React, Next.js, and TypeScript. Currently shipping products across the US, Dominican Republic, and Cuba.",
+      "ctaButtonLabel": "Let's talk"
     },
     "myWork": {
-      "heading": "Explore My Showcase",
+      "heading": "Selected Projects",
       "projects": [
         {
           "title": "Countinkly",
-          "description": "NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and PostgreSQL. Register and track shaindigo links' visits (including social network and country). Explore and interact with others' links through likes, comments, and shares. Effortlessly manage and analyze your shaindigo content with this comprehensive platform."
+          "description": "NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and PostgreSQL. Register and track link visits including social network and country data. Explore and interact with others' links through likes, comments, and shares."
         },
         {
           "title": "Samu LLanes Website",
-          "description": "I created this customized website as a freelancer job for a skilled photographer based in Havana, Cuba. I used Astro as the main technology and integrated React for interactions. I optimized its SEO considering best practices and used Framer Motion to add subtle animations for a modern touch."
+          "description": "Custom website built as a freelance job for a skilled photographer based in Havana, Cuba. Built with Astro and React for interactions, optimized for SEO best practices, with Framer Motion animations for a modern touch."
         },
         {
           "title": "Lambda Solar Website",
-          "description": "Official website revamped using Astro, TailwindCSS, and DaisyUI, with i18n-next for internationalization. Modernized to reflect Lambda Solar Energies' cutting-edge image and latest technologies. Experience seamless navigation and updated content, ensuring a dynamic and engaging user experience for visitors worldwide."
+          "description": "Official website revamped using Astro, TailwindCSS, and DaisyUI, with i18n for internationalization. Modernized to reflect Lambda Solar Energies' cutting-edge image and latest technologies."
         },
         {
           "title": "Movie Paradise",
-          "description": "NextJS with NextUI and TailwindCSS, poweindigo by Supabase. Access TMDB API for comprehensive movie and TV show details, including descriptions, images, and trailers. Register to comment, mark favorites, and create watchlists. Seamlessly manage your movie experience with this interactive platform."
+          "description": "NextJS app with NextUI and TailwindCSS, powered by Supabase. Access TMDB API for comprehensive movie and TV show details. Register to comment, mark favorites, and create watchlists."
         },
         {
           "title": "Mixóloga E-Menu",
-          "description": "I designed and created  a minimal vintage menu for this Bar (La Mixóloga) located in Vedado, Havana, Cuba. Seamlessly integrated with Contentful CMS for easy updates. Enjoy internationalization via Astro and Contentful locales, ensuring a smooth user experience for patrons from around the world."
+          "description": "Minimal vintage digital menu for La Mixóloga bar in Vedado, Havana. Integrated with Contentful CMS for easy updates and internationalization via Astro."
         },
         {
           "title": "calCUPlator",
-          "description": " Experience real-time USD and MLC exchange rates and formats in Cuba through this NextJS-poweindigo web app. TailwindCSS and ShadCn ensures a polished design. Manage state seamlessly with Zustand. Stay updated on currency fluctuations effortlessly, simplifying your financial decisions with accurate, up-to-date information."
+          "description": "Real-time USD and MLC exchange rates for Cuba. Built with NextJS, TailwindCSS, ShadCn, and Zustand for state management."
         },
         {
           "title": "AnimeCu",
-          "description": " AnimeCu is created as a result of my journey learning NextJS and TypeScript. Using the API provided by JikanMoe, I create a modern interface where users can discover and search for anime and manga information using advanced filters. As an added bonus, each anime includes its trailer."
+          "description": "Modern anime and manga discovery platform built with NextJS and TypeScript, using the JikanMoe API with advanced search filters and trailer playback."
         },
         {
           "title": "Cuban Bazar",
-          "description": "This project was created with NextJS as a result of a technical test launched by Mercado Libre. I used NextUI as a component library due to its easy integration with Tailwind CSS. I used route handler to simulate my own API with mocked JSON data. Additionally, I used Zustand to include a 'shopping cart' feature with local storage persistence."
+          "description": "NextJS e-commerce built for a Mercado Libre technical test. Uses NextUI, route handlers for a mock API, and Zustand for a persistent shopping cart."
         },
         {
           "title": "Electric Bill Calculator",
-          "description": "It is among my early projects on my self-taught progress. It uses React with Tailwind CSS and was born out of the idea that although there are mobile apps that calculate your electricity consumption, why occupy storage space when you can have it at your disposal through a web page? It utilizes React Hook Form to achieve proper user inputs."
+          "description": "React + TailwindCSS app for calculating electricity consumption in Cuba. Uses React Hook Form for proper user input handling."
+        },
+        {
+          "title": "Euforia Habana",
+          "description": "Custom digital menu for Euforia, a restaurant in Havana, Cuba. Built with Astro and TailwindCSS — fast, mobile-first, and easy to navigate without any app download."
         }
       ]
     },
     "aboutMe": {
-      "heading": "A Brief Introduction of Myself: Unveiling My Journey",
-      "description": "<p class='px-2 mt-10'>My name is Carlos Yoan and I'm a passionate web developer from Cuba. I'am 25 years old, I graduated as an <span class='font-bold text-primary'>Electrical Engineer</span> from <span class='font-bold text-primary'>Marta Abreu Central University of Las Villas.</span> Throughout my education, I discoveindigo my passion for programming and decided to embark on a <span class='font-bold text-primary'>self-taught path</span> in web development.</p><p class='mt-4 px-2'>From the start, my main focus has been on <span class='font-bold text-primary'>front-end development,</span>and I have used <span class='font-bold text-primary'> React </span> as the central pillar of my tech stack. I <span class='font-bold text-primary'>love working</span> on the user interface, designing <span class='font-bold text-primary'>attractive and functional</span> web experiencesthat provide meaningful value to users.</p><p class='mt-4 px-2'>Although I currently don't have real work experience in this field, I am eager to embark on my first opportunity to further <span class='font-bold text-primary'>develop myself</span> as part of a professional team. I'm excited about the idea of <span class='font-bold text-primary'>learning</span> from<span class='font-bold text-primary'> experienced professionals</span> and <span class='font-bold text-primary'>contributing</span> my skills and knowledge to exciting projects. <br /></p><p class='text-primary px-2 font-bold mt-4'>I am determined to continue improving my web development skills, learning new technologies, and staying up-to-date!</p>"
+      "heading": "About Me",
+      "description": "<p class='mt-4'>My name is <span class='font-bold text-primary'>Carlos Yoan</span> and I'm a FullStack Developer from Cuba. I graduated as an <span class='font-bold text-primary'>Electrical Engineer</span> from Marta Abreu Central University of Las Villas — but my real passion turned out to be building for the web.</p><p class='mt-4'>Over the past two years I've worked with teams in the <span class='font-bold text-primary'>US, Dominican Republic, and Cuba</span>, shipping real products: SaaS dashboards, AI-powered apps, admin tools, and more. I specialize in <span class='font-bold text-primary'>React and Next.js</span> with deep knowledge of TypeScript, TailwindCSS, and modern frontend architecture.</p><p class='mt-4'>Outside of client work, I build my own projects like <span class='font-bold text-primary'>KilahUI</span> and <span class='font-bold text-primary'>Katarogu</span>, always pushing to learn new things and improve as a developer.</p>"
     },
     "contact": {
-      "heading": "Follow me on my social media! Let's connect and stay in touch!",
-      "message": "Also you can send me a direct message and get a cool toast!",
+      "heading": "Let's connect — I'm always open to new opportunities.",
+      "message": "Or drop me a direct message and get a cool toast!",
       "messageButtonLabel": "Say Hello!"
     },
     "tools": {
-      "heading": "Unleash Your Coding Superpowers: Discover the Tools Behind the Magic!",
-      "stayTunned": "My web development quest is full of exciting updates. Stay tuned for more!"
+      "heading": "Daily Tools",
+      "stayTunned": "Always learning, always improving."
     }
   },
   "es": {}
